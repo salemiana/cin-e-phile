@@ -9,11 +9,11 @@ const MovieDetail = () => {
   const [videoKey, setVideoKey] = useState();
 
   const API_KEY = process.env.REACT_APP_TMDB_KEY;
-  // const API_KEY = "21d0663bbc75c9da17c494c1a25cf466";
+  //const API_KEY = "21d0663bbc75c9da17c494c1a25cf466";
   const movieDetailBaseUrl = `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`;
-  const videoUrl = `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${API_KEY}';
+  const videoUrl = `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${API_KEY}`;
   const baseImageUrl = "https://image.tmdb.org/t/p/w1280";
-  const defaultImage ="https://intranet.birmingham.ac.uk/as/libraryservices/library/libraries-and-opening-hours/our-collections/av-material-films-documentaries-and-music.aspx";
+  const defaultImage = "https://intranet.birmingham.ac.uk/as/libraryservices/library/libraries-and-opening-hours/our-collections/av-material-films-documentaries-and-music.aspx";
   useEffect(() => {
     axios
       .get(movieDetailBaseUrl)
@@ -37,5 +37,11 @@ const MovieDetail = () => {
                 movieDetails?.poster_path
                   ? baseImageUrl + movieDetails?.poster_path
                   : defaultImage
-              }
-             
+              } />
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+};
+
