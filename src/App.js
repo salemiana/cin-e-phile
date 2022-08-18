@@ -6,6 +6,9 @@ import MovieListHeading from './components/MovieListHeading';
 import SearchBox from './components/SearchBox';
 import AddFavourite from './components/AddFavourites';
 import RemoveFavourites from './components/RemoveFavourites';
+import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   const [movies, setmovies] = useState([]);
@@ -63,17 +66,21 @@ const App = () => {
 
 
   return (
+    <div className='App'>
+        <Navbar />
+        <Header searchValue={searchValue} setSearchValue={setSearchValue} /> 
+   
     <div className='container-fluid movie-app'>
       <div className='row d-flex align-items-center mt-4 mb-4'>
         <MovieListHeading heading="movie" />
-        <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
+        {/* <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} /> */}
       </div>
       <div className='row'>
         <MovieList
           movies={movies}
           handleFavouritesClick={addFavouriteMovie}
           favouriteComponent={AddFavourite}
-        />
+          />
       </div>
       <div className='row d-flex align-items-center mt-4 mb-4'>
         <MovieListHeading heading='favourites' />
@@ -83,9 +90,11 @@ const App = () => {
           movies={favourites}
           handleFavouritesClick={addFavouriteMovie}
           favouriteComponent={RemoveFavourites}
-        />
+          />
       </div>
     </div>
+        <Footer />
+          </div>
   );
 };
 
