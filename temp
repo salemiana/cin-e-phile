@@ -1,0 +1,427 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/7ZO9yoEU2fAHKhmJWfAc2QIPWJg.jpg",
+            "id": 766507,
+            "title": "Prey",
+            "original_language": "en",
+            "original_title": "Prey",
+            "overview": "When danger threatens her camp, the fierce and highly skilled Comanche warrior Naru sets out to protect her people. But the prey she stalks turns out to be a highly evolved alien predator with a technically advanced arsenal.",
+            "poster_path": "/ujr5pztc1oitbe7ViMUOilFaJ7s.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                28,
+                878,
+                53
+            ],
+            "popularity": 10508.503,
+            "release_date": "2022-08-02",
+            "video": false,
+            "vote_average": 8.105,
+            "vote_count": 2651
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/wDyM1lIIgK4RIDAgr8iuZe9N1cf.jpg",
+            "id": 755566,
+            "title": "Day Shift",
+            "original_language": "en",
+            "original_title": "Day Shift",
+            "overview": "An LA vampire hunter has a week to come up with the cash to pay for his kid's tuition and braces. Trying to make a living these days just might kill him.",
+            "poster_path": "/bI7lGR5HuYlENlp11brKUAaPHuO.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                28,
+                14,
+                27
+            ],
+            "popularity": 956.53,
+            "release_date": "2022-08-10",
+            "video": false,
+            "vote_average": 6.755,
+            "vote_count": 370
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/nmGWzTLMXy9x7mKd8NKPLmHtWGa.jpg",
+            "id": 438148,
+            "title": "Minions: The Rise of Gru",
+            "original_language": "en",
+            "original_title": "Minions: The Rise of Gru",
+            "overview": "A fanboy of a supervillain supergroup known as the Vicious 6, Gru hatches a plan to become evil enough to join them, with the backup of his followers, the Minions.",
+            "poster_path": "/wKiOkZTN9lUUUNZLmtnwubZYONg.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                10751,
+                16,
+                12,
+                35,
+                14
+            ],
+            "popularity": 3856.366,
+            "release_date": "2022-06-29",
+            "video": false,
+            "vote_average": 7.793,
+            "vote_count": 1439
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/rLo9T9jEg67UZPq3midjLnTUYYi.jpg",
+            "id": 614934,
+            "title": "Elvis",
+            "original_language": "en",
+            "original_title": "Elvis",
+            "overview": "The life story of Elvis Presley as seen through the complicated relationship with his enigmatic manager, Colonel Tom Parker.",
+            "poster_path": "/qBOKWqAFbveZ4ryjJJwbie6tXkQ.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                10402,
+                18,
+                36
+            ],
+            "popularity": 1100.649,
+            "release_date": "2022-06-22",
+            "video": false,
+            "vote_average": 7.938,
+            "vote_count": 1057
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/odJ4hx6g6vBt4lBWKFD1tI8WS4x.jpg",
+            "id": 361743,
+            "title": "Top Gun: Maverick",
+            "original_language": "en",
+            "original_title": "Top Gun: Maverick",
+            "overview": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
+            "poster_path": "/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                28,
+                18
+            ],
+            "popularity": 4227.805,
+            "release_date": "2022-05-24",
+            "video": false,
+            "vote_average": 8.329,
+            "vote_count": 2138
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/9eAn20y26wtB3aet7w9lHjuSgZ3.jpg",
+            "id": 507086,
+            "title": "Jurassic World Dominion",
+            "original_language": "en",
+            "original_title": "Jurassic World Dominion",
+            "overview": "Four years after Isla Nublar was destroyed, dinosaurs now live—and hunt—alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history’s most fearsome creatures.",
+            "poster_path": "/kAVRgw7GgK1CfYEJq8ME6EvRIgU.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                12,
+                28,
+                878
+            ],
+            "popularity": 4342.904,
+            "release_date": "2022-06-01",
+            "video": false,
+            "vote_average": 7.101,
+            "vote_count": 2849
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/3VQj6m0I6gkuRaljmhNZl0XR3by.jpg",
+            "id": 585511,
+            "title": "Luck",
+            "original_language": "en",
+            "original_title": "Luck",
+            "overview": "Suddenly finding herself in the never-before-seen Land of Luck, the unluckiest person in the world must unite with the magical creatures there to turn her luck around.",
+            "poster_path": "/1HOYvwGFioUFL58UVvDRG6beEDm.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                16,
+                12,
+                35,
+                14
+            ],
+            "popularity": 2541.619,
+            "release_date": "2022-08-05",
+            "video": false,
+            "vote_average": 8.145,
+            "vote_count": 427
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/tHR34A5n0my4maACNdLpWGd6QYq.jpg",
+            "id": 698948,
+            "title": "Thirteen Lives",
+            "original_language": "en",
+            "original_title": "Thirteen Lives",
+            "overview": "Based on the true nail-biting mission that captivated the world. Twelve boys and the coach of a Thai soccer team explore the Tham Luang cave when an unexpected rainstorm traps them in a chamber inside the mountain. Entombed behind a maze of flooded cave tunnels, they face impossible odds. A team of world-class divers navigate through miles of dangerous cave networks to discover that finding the boys is only the beginning.",
+            "poster_path": "/yi5KcJqFxy0D6yP8nCfcF8gJGg5.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                18,
+                53
+            ],
+            "popularity": 1154.521,
+            "release_date": "2022-07-18",
+            "video": false,
+            "vote_average": 8.074,
+            "vote_count": 374
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/nW5fUbldp1DYf2uQ3zJTUdachOu.jpg",
+            "id": 718789,
+            "title": "Lightyear",
+            "original_language": "en",
+            "original_title": "Lightyear",
+            "overview": "Legendary Space Ranger Buzz Lightyear embarks on an intergalactic adventure alongside a group of ambitious recruits and his robot companion Sox.",
+            "poster_path": "/ox4goZd956BxqJH6iLwhWPL9ct4.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                16,
+                878,
+                12,
+                28,
+                10751
+            ],
+            "popularity": 1815.295,
+            "release_date": "2022-06-15",
+            "video": false,
+            "vote_average": 7.293,
+            "vote_count": 1698
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/p1F51Lvj3sMopG948F5HsBbl43C.jpg",
+            "id": 616037,
+            "title": "Thor: Love and Thunder",
+            "original_language": "en",
+            "original_title": "Thor: Love and Thunder",
+            "overview": "After his retirement is interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods, Thor enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now inexplicably wields Mjolnir as the Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late.",
+            "poster_path": "/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                28,
+                12,
+                14
+            ],
+            "popularity": 6380.524,
+            "release_date": "2022-07-06",
+            "video": false,
+            "vote_average": 6.794,
+            "vote_count": 1919
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/27Mj3rFYP3xqFy7lnz17vEd8Ms.jpg",
+            "id": 725201,
+            "title": "The Gray Man",
+            "original_language": "en",
+            "original_title": "The Gray Man",
+            "overview": "When a shadowy CIA agent uncovers damning agency secrets, he's hunted across the globe by a sociopathic rogue operative who's put a bounty on his head.",
+            "poster_path": "/8cXbitsS6dWQ5gfMTZdorpAAzEH.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                28,
+                53
+            ],
+            "popularity": 1597.989,
+            "release_date": "2022-07-13",
+            "video": false,
+            "vote_average": 7.042,
+            "vote_count": 1624
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/wcKFYIiVDvRURrzglV9kGu7fpfY.jpg",
+            "id": 453395,
+            "title": "Doctor Strange in the Multiverse of Madness",
+            "original_language": "en",
+            "original_title": "Doctor Strange in the Multiverse of Madness",
+            "overview": "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.",
+            "poster_path": "/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                14,
+                28,
+                12
+            ],
+            "popularity": 1923.127,
+            "release_date": "2022-05-04",
+            "video": false,
+            "vote_average": 7.501,
+            "vote_count": 5329
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/C8FpZfTPEZDjngPlatiFsaDB4A.jpg",
+            "id": 718930,
+            "title": "Bullet Train",
+            "original_language": "en",
+            "original_title": "Bullet Train",
+            "overview": "Unlucky assassin Ladybug is determined to do his job peacefully after one too many gigs gone off the rails. Fate, however, may have other plans, as Ladybug's latest mission puts him on a collision course with lethal adversaries from around the globe—all with connected, yet conflicting, objectives—on the world's fastest train.",
+            "poster_path": "/rTgfp0ZuikSUK8HK8Jgn3PUqteH.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                28,
+                35,
+                80
+            ],
+            "popularity": 940.707,
+            "release_date": "2022-07-03",
+            "video": false,
+            "vote_average": 7.467,
+            "vote_count": 363
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/jqVyOIz8jxH0NUlc0QUHmV0uOcn.jpg",
+            "id": 756999,
+            "title": "The Black Phone",
+            "original_language": "en",
+            "original_title": "The Black Phone",
+            "overview": "Finney Blake, a shy but clever 13-year-old boy, is abducted by a sadistic killer and trapped in a soundproof basement where screaming is of little use. When a disconnected phone on the wall begins to ring, Finney discovers that he can hear the voices of the killer’s previous victims. And they are dead set on making sure that what happened to them doesn’t happen to Finney.",
+            "poster_path": "/lr11mCT85T1JanlgjMuhs9nMht4.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                27,
+                53
+            ],
+            "popularity": 2395.624,
+            "release_date": "2022-06-22",
+            "video": false,
+            "vote_average": 7.952,
+            "vote_count": 1929
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/nHWr40LGgyxymEhZCOA2WHATPpn.jpg",
+            "id": 800345,
+            "title": "Carter",
+            "original_language": "ko",
+            "original_title": "카터",
+            "overview": "Carter, who awakens two months into a deadly pandemic originating from the DMZ that has already devastated US and North Korea. He who has no recollections of his past finds a mysterious device in his head, and a lethal bomb in his mouth. A voice in his ears gives him orders to avoid getting killed and he's thrown into a mysterious operation while the CIA and North Korean coup chase him close.",
+            "poster_path": "/uzAh3Ub2YttCz13cnyB9PvhpmIL.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                28,
+                53
+            ],
+            "popularity": 646.431,
+            "release_date": "2022-08-05",
+            "video": false,
+            "vote_average": 6.244,
+            "vote_count": 170
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/aIkG2V4UXrfkxMdJZmq30xO0QQr.jpg",
+            "id": 791155,
+            "title": "Secret Headquarters",
+            "original_language": "en",
+            "original_title": "Secret Headquarters",
+            "overview": "While hanging out after school, Charlie and his friends discover the headquarters of the world’s most powerful superhero hidden beneath his home. When villains attack, they must team up to defend the headquarters and save the world.",
+            "poster_path": "/8PsHogUfvjWPGdWAI5uslDhHDx7.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                878,
+                12,
+                28
+            ],
+            "popularity": 148.69,
+            "release_date": "2022-08-12",
+            "video": false,
+            "vote_average": 7.0,
+            "vote_count": 20
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/wp3vpSWAIjKSEeYb8F5NSZfONqw.jpg",
+            "id": 545611,
+            "title": "Everything Everywhere All at Once",
+            "original_language": "en",
+            "original_title": "Everything Everywhere All at Once",
+            "overview": "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save what's important to her by connecting with the lives she could have led in other universes.",
+            "poster_path": "/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                28,
+                12,
+                878
+            ],
+            "popularity": 241.617,
+            "release_date": "2022-03-24",
+            "video": false,
+            "vote_average": 8.267,
+            "vote_count": 1343
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/iQlJyRecJeGGzQGT2rEcyAgz89F.jpg",
+            "id": 762975,
+            "title": "Purple Hearts",
+            "original_language": "en",
+            "original_title": "Purple Hearts",
+            "overview": "An aspiring musician agrees to a marriage of convenience with a soon-to-deploy Marine, but a tragedy soon turns their fake relationship all too real.",
+            "poster_path": "/4JyNWkryifWbWXJyxcWh3pVya6N.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                10749,
+                18
+            ],
+            "popularity": 1080.119,
+            "release_date": "2022-07-29",
+            "video": false,
+            "vote_average": 8.498,
+            "vote_count": 1170
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/xVbppM1xgbskOKgOuV8fbWBWHtt.jpg",
+            "id": 762504,
+            "title": "Nope",
+            "original_language": "en",
+            "original_title": "Nope",
+            "overview": "Residents in a lonely gulch of inland California bear witness to an uncanny, chilling discovery.",
+            "poster_path": "/AcKVlWaNVVVFQwro3nLXqPljcYA.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                27,
+                9648,
+                878,
+                53
+            ],
+            "popularity": 377.258,
+            "release_date": "2022-07-20",
+            "video": false,
+            "vote_average": 7.056,
+            "vote_count": 330
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/jwFBzWabfWpnN9P5YIVVX5W8WUY.jpg",
+            "id": 683340,
+            "title": "Vengeance",
+            "original_language": "en",
+            "original_title": "Vengeance",
+            "overview": "A journalist and podcaster from New York City travels to West Texas in order to report on the death of a girl he was hooking up with.",
+            "poster_path": "/pdQFGAX68LWoiBqzXwZhMRaraC0.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                53,
+                9648,
+                35
+            ],
+            "popularity": 27.896,
+            "release_date": "2022-07-29",
+            "video": false,
+            "vote_average": 7.269,
+            "vote_count": 26
+        }
+    ],
+    "total_pages": 1000,
+    "total_results": 20000
+}
