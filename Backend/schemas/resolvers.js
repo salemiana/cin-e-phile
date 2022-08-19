@@ -39,7 +39,7 @@ const resolvers = {
 
       return { token, user };
     },
-    savedMovies: async (parent, { input }, { user }) => {
+    saveMovie: async (parent, { input }, { user }) => {
       if (user) {
         const updatedUser = await User.findByIdAndUpdate(
           { _id: user._id },

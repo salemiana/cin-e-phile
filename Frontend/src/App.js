@@ -4,7 +4,7 @@ import './App.css';
 import MovieList from './components/MovieList';
 import MovieListHeading from './components/MovieListHeading';
 import AddFavourite from './components/AddFavourites';
-import RemoveFavourites from './components/RemoveFavourites';
+//import RemoveFavourites from './components/RemoveFavourites';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
@@ -57,7 +57,7 @@ const App = () => {
     saveToLocalStorage(newFavouriteList);
   };
 
-  const RemoveFavouritesMovie = (movie) => {
+  const RemoveFavourites = (movie) => {
     const newFavouriteList = AddFavourite.filter(
       (favourite) => favourite.imdbID !== movie.imdbID
 
