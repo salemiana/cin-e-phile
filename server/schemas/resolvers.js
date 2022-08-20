@@ -39,12 +39,14 @@ const resolvers = {
 
       return { token, user };
     },
+
     addUser: async (parent, args) => {
       const user = await User.create(args);
       const token = signToken(user);
 
       return { token, user };
     },
+    
     saveMovie: async (parent, { input }, { user }) => {
       if (user) {
         const updatedUser = await User.findByIdAndUpdate(
