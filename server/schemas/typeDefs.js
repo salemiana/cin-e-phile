@@ -4,7 +4,7 @@ const typeDefs = gql`
   type Query {
     me: User
     user(_id: ID!): User
-    movie: [Movie]
+    movie: User
   }
 
   type Mutation {
@@ -22,14 +22,14 @@ const typeDefs = gql`
   }
   type Movie {
     title: String
-    year: [String]
+    year: String
     imdbID: String
     type: String
     poster: String
   }
   input movieInput {
     title: String
-    year: [String]
+    year: String
     imdbID: String
     type: String
     poster: String

@@ -40,6 +40,7 @@ const client = new ApolloClient({
 });
 
 const App = () => {
+  
   const [movies, setmovies] = useState([]);
   const [favourites, setFavourites] = useState('');
   const [searchValue, setSearchValue] = useState('');
@@ -95,6 +96,7 @@ const App = () => {
 
 
   return (
+    <ApolloProvider client={client}>
     <div className='App'>
         <Navbar />
         <Header searchValue={searchValue} setSearchValue={setSearchValue} /> 
@@ -123,6 +125,7 @@ const App = () => {
     </div>
         <Footer />
           </div>
+          </ApolloProvider>
   );
 };
 

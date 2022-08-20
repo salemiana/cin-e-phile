@@ -10,9 +10,15 @@ const resolvers = {
           .select('-__v -password') .populate('movies'); 
         return userData;
       }
+
     
       throw new AuthenticationError('Not logged in');
     },
+
+    user: async (parent, { _id }) => {
+      return User.findOne({ _id })
+        .select('-__v -password')
+      }
 },
 
   Mutation: {
@@ -56,7 +62,7 @@ const resolvers = {
       if (user) {
         const updatedUser = await User.findOneAndUpdate(
           { _id: user._id },
-          { $pull: { savedMovies: { movieId: movieId } } },
+          { $pull: { savedMovies: { imdbID: movieId } } },
           { new: true, runValidators: true }
         );
 
