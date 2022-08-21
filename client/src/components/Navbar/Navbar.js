@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { MenuItems } from "./MenuItems";
+// import { MenuItems } from "./MenuItems";
 import logo from "../logo_1.png";
-import { Button } from "../Button";
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Navbar.css";
 
@@ -27,19 +27,22 @@ class Navbar extends Component {
             }
           ></i>
         </div>
-        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
-          {MenuItems.map((item, index) => {
-            return (
-              <li key={index}>
-                <a className={item.cName} href={item.url}>
-                  {item.title}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-        <Button>Sign Up</Button>
-        <Button>Log In</Button>
+       
+        <div className="btn">
+
+        <>
+          <Link to="/" className="nav-manu nav-menu-active">Home</Link>
+              <Link to="/movie" className="nav-manu nav-menu-active">Movie</Link>
+               <Link to="/tv" className="nav-manu nav-menu-active">TV</Link>
+              <Link to="/login" className="sign-up-button">Login |</Link>
+              <Link to="/signup" className="login-button">| Signup</Link>
+            </>
+        </div>
+        {/* <div className="btn"> 
+        <button className="sign-up-button" onClick={Signup}>Sign Up |</button>
+        
+        <button className="login-button" onClick={success}>| LogIn</button>
+        </div> */}
       </nav>
     );
   }

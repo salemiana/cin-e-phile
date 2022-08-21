@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {
   ApolloClient,
   InMemoryCache,
@@ -21,8 +22,9 @@ import Sorting from './components/Sorting/Sorting';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 
-import Signup from "./Pages/Signup";
-import Login from "./Pages/Login";
+import Signup from "./components/Signup";
+import Login from "./components/Login";
+
 
 
 const httpLink = createHttpLink({
@@ -50,6 +52,7 @@ const App = () => {
   const [movies, setmovies] = useState([]);
   const [favourites, setFavourites] = useState("");
   const [searchValue, setSearchValue] = useState("");
+   const [user,setLoginUser] = useState({});
 
   //API call to get movie results from search
   const getMovieRequest = async () => {
@@ -116,15 +119,31 @@ const App = () => {
     <ApolloProvider client={client}>
       <div className="App">
         <div id="header-bg">
-          <Login />
-          <Signup />
-          <Navbar />
+          {/* <Login />
+          <Signup /> */}
+          {/* <Navbar /> */}
+           <div className="App">
+   <Router>
+      <Fragment>
+        <Navbar/>
+        <Routes>
+       
+            {/* <Route exact path='/' element={<Home/>}/> */}
+          
+          <Route exact path='/signup' element={<Signup/>}/>
+          <Route exact path='/login' element={<Login/>}/>
+  
+        </Routes>
+      </Fragment>
+    </Router>
+
+    </div>
           {/* Header with searchbar */}
           <Header searchValue={searchValue} setSearchValue={setSearchValue} />
         </div>
 
         {/* What I added for the movie page. Just uncomment it out to view. */}
-        <Sorting></Sorting>
+        {/* <Sorting></Sorting> */}
 
         {/* container for movielist */}
         <div className='container-fluid' id="page_content">
