@@ -24,6 +24,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
 
+
 const httpLink = createHttpLink({
   uri: "/graphql",
 });
