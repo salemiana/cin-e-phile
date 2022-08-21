@@ -8,7 +8,6 @@ export const LOGIN_USER = gql`
         _id
         username
         email
-        movieCount
         savedMovies {
           title
           year
@@ -28,7 +27,6 @@ export const ADD_USER = gql`
         _id
         username
         email
-        movieCount
         savedMovies {
           title
           year
@@ -46,7 +44,6 @@ export const SAVE_MOVIE = gql`
       _id
       username
       email
-      movieCount
       savedMovies {
         title
         year
@@ -63,7 +60,6 @@ export const REMOVE_MOVIE = gql`
       _id
       username
       email
-      movieCount
       savedMovies {
         title
         year

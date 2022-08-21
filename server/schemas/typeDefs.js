@@ -1,10 +1,10 @@
 const { gql } = require('apollo-server-express');
+// movie: User
 
 const typeDefs = gql`
   type Query {
     me: User
     user(_id: ID!): User
-    movie: User
   }
 
   type Mutation {
@@ -17,7 +17,6 @@ const typeDefs = gql`
     _id: ID
     username: String
     email: String
-    movieCount: Int
     savedMovies: [Movie]
   }
   type Movie {

@@ -9,13 +9,19 @@ export const getMe = (token) => {
   };
   
   export const createUser = (userData) => {
+    console.log("Userdata is :" + userData);
+
     return fetch('/api/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(userData),
-    });
+    })
+    .then((data) => {
+      console.log(data);
+    })
+
   };
   
   export const loginUser = (userData) => {
