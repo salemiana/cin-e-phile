@@ -67,10 +67,21 @@ export const getMe = (token) => {
     });
   };
 
+  //get featured movie list
   export const getFeatured = (type) => {
     return fetch(`https://api.themoviedb.org/3/trending/${type}/week?api_key=${TMDB_KEY}`);
 
-}
+  }
+
+  //get movie details
+  export const getDetails = (id) => {
+    return fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${TMDB_KEY}&language=en-US`)
+  }
+
+  //get credits
+  export const getCredits = (id) => {
+    return fetch(`https://api.themoviedb.org/3/movie/${id}/credits?api_key=${TMDB_KEY}&language=en-US`)
+  }
   
   // make a search to movies api??????????
   // http://www.omdbapi.com/?i=tt3896198&apikey=2dda8adb

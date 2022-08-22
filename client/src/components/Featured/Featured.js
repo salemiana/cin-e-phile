@@ -31,6 +31,7 @@ const Featured = () => {
             throw new Error('something went wrong!');
 
           const f_movie = await response.json();
+          console.log(f_movie);
           setMovies(f_movie.results);
         }catch(err){
           console.log(err);
