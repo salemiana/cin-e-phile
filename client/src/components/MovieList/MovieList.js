@@ -1,5 +1,5 @@
 import React from "react";
-import AddFavourite from "./AddFavourites";
+import AddFavourite from "../AddFavourites";
 // import favouriteComponent from "./AddFavourite"
 
 const MovieList = (props) => {
@@ -9,17 +9,7 @@ const MovieList = (props) => {
         <>
             {props.movies.length ?
                 props.movies.map((movie) => (   
-                    //original code
-                    // <div key= {movie.imdbID} className="movie-card">
-                    //     <img src={movie.Poster} alt='movie'></img>
-                    //     <div
-                    //     onClick={() => props.handleFavouritesClick()}
-                    //     className="addFav"
-                    //     >
-                    //         <AddFavourite/>
-                    //     </div>
-                    // </div>
-                    <div key= {movie.id} className="movie-card">
+                    <div key= {movie.id} className="movie-card" id={movie.id}>
                          <img src={`https://image.tmdb.org/t/p/w185/${movie.poster_path}`} alt='movie'></img>
                          <div
                         onClick={() => props.handleFavouritesClick()}

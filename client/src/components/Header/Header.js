@@ -19,6 +19,9 @@ export default function Header(props) {
 
   const handleSubmit = (event) => {
    event.preventDefault();
+   console.log("I was clicked");
+
+   props.setFeatured(false);
    props.setSearchValue(keyWord)
   }
 
