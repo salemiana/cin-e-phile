@@ -1,0 +1,48 @@
+#searchMovieList{
+    margin-top: 1em;
+    width: 100%;
+    justify-content:center;
+    display:flex;
+    flex: flex-wrap;
+}
+
+.sorting {
+    width: 80%;
+    display:flex;
+    flex: flex-wrap;
+    flex-direction: row;
+    font-size: 12px;
+}
+
+.sortBox{
+    flex-wrap:wrap; 
+    flex:1;
+    margin-right:20px;
+}
+
+.sorting label {
+    text-align: left;
+    padding-left:5px;
+    color: black;
+}
+
+.sorting input, .sorting select {
+    width: 100%;
+    padding: 6px 10px;
+    border-radius:100px;
+    flex: 1;
+    border: 0px solid;
+    filter: drop-shadow(1px 1px 1px rgba(102, 46, 82, .5))
+}
+
+.sorting button {
+    height: 30px;
+    align-self:end;
+    margin-bottom: 2px;
+    background: rgba(102, 46, 82);
+    color: #fff;
+    border: 0px;
+    padding: 8px;
+    border-radius: 100px;
+    cursor: pointer;
+}
