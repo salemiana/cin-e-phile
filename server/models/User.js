@@ -1,5 +1,6 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
+//const jwt = require("jsonwebtoken");
 
 // import schema from Movie.js
 const movieSchema = require('./Movie');
