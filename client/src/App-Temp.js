@@ -11,8 +11,8 @@ import "./App.css";
 import ActorList from "./components/ActorList/ActorList";
 import MovieList from "./components/MovieList/MovieList";
 import MovieListHeading from "./components/MovieListHeading";
-import AddFavourite from "./components/AddFavourites";
-import RemoveFavourites from './components/RemoveFavourites';
+import AddFavorite from "./components/AddFavorite";
+// import Removefavorites from './components/Removefavorites';
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -53,7 +53,7 @@ const App = () => {
   const [actors, setActors] = useState([]);
   const [movies, setmovies] = useState([]);
   const [shows, setShows] = useState([]);
-  const [favourites, setFavourites] = useState("");
+  const [favorites, setfavorites] = useState("");
   const [searchValue, setSearchValue] = useState("");
 
   //changes the movies contents
@@ -116,30 +116,30 @@ const App = () => {
   }, [featured, searchValue])
 
   // useEffect(() => {
-  //   const movieFavourites = JSON.parse(
-  //     localStorage.getItem('movie-app2-favourites')
+  //   const moviefavorites = JSON.parse(
+  //     localStorage.getItem('movie-app2-favorites')
   //   )|| []
 
-  //   setFavourites(movieFavourites);
+  //   setfavorites(moviefavorites);
   // }, []);
 
   const saveToLocalStorage = (items) => {
-    localStorage.setItem("movie-app2-favourites", JSON.stringify(items));
+    localStorage.setItem("movie-app2-favorites", JSON.stringify(items));
   };
 
-  const addFavouriteMovie = (Movie) => {
-    const newFavouriteList = [...AddFavourite, Movie];
-    setFavourites(newFavouriteList);
-    saveToLocalStorage(newFavouriteList);
+  const addFavoriteMovie = (Movie) => {
+    const newFavoriteList = [...AddFavorite, Movie];
+    setfavorites(newFavoriteList);
+    saveToLocalStorage(newFavoriteList);
   };
 
-  const RemoveFavourites = (movie) => {
-    const newFavouriteList = AddFavourite.filter(
-      (favourite) => favourite.imdbID !== movie.imdbID
+  const Removefavorites = (movie) => {
+    const newFavoriteList = AddFavorite.filter(
+      (Favorite) => Favorite.imdbID !== movie.imdbID
     );
 
-    setFavourites(newFavouriteList);
-    saveToLocalStorage(newFavouriteList);
+    setfavorites(newFavoriteList);
+    saveToLocalStorage(newFavoriteList);
   };
 
   return (
@@ -159,8 +159,8 @@ const App = () => {
           <div className="movie-app">
             <MovieList
               movies={movies}
-              handleFavouritesClick={addFavouriteMovie}
-              favouriteComponent={AddFavourite}
+              handlefavoritesClick={addFavoriteMovie}
+              FavoriteComponent={AddFavorite}
             />
           </div>
 
@@ -171,8 +171,8 @@ const App = () => {
           <div className="movie-app">
             <MovieList
               movies={shows}
-              handleFavouritesClick={addFavouriteMovie}
-              favouriteComponent={AddFavourite}
+              handlefavoritesClick={addFavoriteMovie}
+              FavoriteComponent={AddFavorite}
             />
           </div>
 
@@ -204,20 +204,20 @@ export default App;
   <div className="movie-app">
     <MovieList
       movies={movies}
-      handleFavouritesClick={addFavouriteMovie}
-      favouriteComponent={AddFavourite}
+      handlefavoritesClick={addFavoriteMovie}
+      FavoriteComponent={AddFavorite}
     />
   </div>
 
   <div className=' d-flex align-items-center mt-4 mb-4'>
-    <MovieListHeading heading='favourites' />
+    <MovieListHeading heading='favorites' />
   </div>
 
   <div>
     <MovieList
-      movies={favourites}
-      handleFavouritesClick={addFavouriteMovie}
-      favouriteComponent={RemoveFavourites}
+      movies={favorites}
+      handlefavoritesClick={addFavoriteMovie}
+      FavoriteComponent={Removefavorites}
     />
   </div>
 </div> */}

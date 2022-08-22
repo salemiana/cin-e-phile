@@ -7,12 +7,36 @@
   overflow-x:scroll;
 }
 
+#searchList{
+  margin: 0 auto;
+  width: 90%;
+}
+
+.searchMovie{
+  margin: 0 auto;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  min-width: 20%;
+  justify-content:space-between;
+}
+.searchMovie::after {
+  content: "";
+  flex: auto;
+  margin-left: 20px;
+}
+
+.searchMovie img{
+  width: 100%;
+}
+
 /* valerie added */
 .movie-card{
   display:flex;
   flex-direction:column;
-  width:100%;
+  /* width:100%; */
 }
+
 
 .movie-app img{
   height:90%;

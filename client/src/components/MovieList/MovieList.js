@@ -1,21 +1,20 @@
 import React from "react";
-import AddFavourite from "../AddFavourites";
-// import favouriteComponent from "./AddFavourite"
+import AddFavorite from "../AddFavorite";
+// import FavoriteComponent from "./AddFavorite"
 
 const MovieList = (props) => {
-    const favouriteComponent = props.favouritesComponent;
-    // console.log(props)
+    // const FavoriteComponent = props.favoritesComponent;
+    const {movies} = props;
+    const filter = movies.filter(movie => movie.poster_path!=null);
+    
     return (
         <>
-            {props.movies.length ?
-                props.movies.map((movie) => (   
+            {filter.length ?
+                filter.map((movie) => (   
                     <div key= {movie.id} className="movie-card" id={movie.id}>
                          <img src={`https://image.tmdb.org/t/p/w185/${movie.poster_path}`} alt='movie'></img>
-                         <div
-                        onClick={() => props.handleFavouritesClick()}
-                        className="addFav"
-                        >
-                            <AddFavourite/>
+                         <div className="addFav">
+                            <AddFavorite/>
                         </div>
                     </div>
                 )) : 

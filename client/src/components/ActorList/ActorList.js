@@ -2,9 +2,7 @@ import React, {useEffect } from "react";
 
 const ActorList = (props) => {
     const {actors} = props;
-    console.log(actors);
     const filter = actors.filter(actor => actor.profile_path!=null);
-    console.log(filter);
     
     return (
         <>
