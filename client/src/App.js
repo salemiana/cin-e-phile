@@ -19,7 +19,6 @@ import SearchList from "./components/SearchList/SearchList";
 import RemoveFavorite from './components/RemoveFavorite';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 
@@ -51,7 +50,6 @@ const App = () => {
   const [searchValue, setSearchValue] = useState("");
   const [featured, setFeatured] = useState([true]);
   const [showList, setList] = useState(<featured></featured>)
-  const [user, setLoginUser] = useState({});
 
   useEffect(() => {
     console.log(featured);
@@ -97,19 +95,21 @@ const App = () => {
       <div className="App">
         <Router>
           <Fragment>
-            <Navbar featured={featured} setFeatured={setFeatured} />
+            <div id="header-bg">
+              <Navbar featured={featured} setFeatured={setFeatured} />
+              <Header searchValue={searchValue} setSearchValue={setSearchValue} featured={featured} setFeatured={setFeatured} />
+            </div>
             <Routes>
               {/* <Route exact path='/' element={<Home/>}/> */}
-
               <Route exact path='/signup' element={<Signup />} />
               <Route exact path='/login' element={<Login />} />
               <Route exact path='/movie' element={<Movie />} />
-
-              <Header searchValue={searchValue} setSearchValue={setSearchValue} featured={featured} setFeatured={setFeatured} />
-              {showList}
             </Routes>
           </Fragment>
         </Router>
+        <div>
+          {showList}
+        </div>
       </div>
       <Footer />
     </ApolloProvider >
