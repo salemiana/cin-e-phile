@@ -25,6 +25,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 
 import Signup from "./components/Signup";
 import Login from "./components/Login";
+import MovieCard from "./components/MovieCard";
 
 
 
