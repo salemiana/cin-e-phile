@@ -13,6 +13,7 @@ const MovieList = (props) => {
 
     async function fetchDetails(id){
         try{
+            //call api 'getDetails" 
             const response = await getDetails(id);
             if(!response.ok)
                 throw new Error('something went wrong!');
@@ -22,6 +23,7 @@ const MovieList = (props) => {
             if(!results.ok)
                 throw new Error('something went wrong!');
             const creditList = await results.json();
+
             console.log(movieDetails);
             console.log(creditList);
 
