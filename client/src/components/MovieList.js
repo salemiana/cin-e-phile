@@ -7,7 +7,7 @@ const MovieList = (props) => {
     // console.log(props)
     return (
         <>
-            {props.movies.length ?
+            {props.movies ?
                 props.movies.map((movie) => (   
                     //original code
                     // <div key= {movie.imdbID} className="movie-card">

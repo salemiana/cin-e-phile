@@ -1,9 +1,8 @@
 .NavbarItems {
-    height: 80px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
 }
 .navbar-logo {
     color: #fff;
@@ -33,12 +32,11 @@
 }
 .nav-links {
     color: white;
-    text-decoration: none;
-    padding: 0.5rem 1 rem;
+    text-decoration: none;   
 }
 .nav-links:hover {
     color: #fff;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #fff; 
 }
 .fa-bars {
     color: #fff;
@@ -50,16 +48,26 @@
     display: none;
 }
 .btn {
-    align-self: start;
     background: rgba(102, 46, 82);
     color: #fff;
         border: 0px;
         padding: 4px;
         border-radius: 100px;
         cursor: pointer;
-       
-        
+        text-transform:none;
 }
+   .btn-logout {
+    background: rgba(102, 46, 82);
+    color: #fff;
+   
+    padding: 4px;
+    border-radius: 100px;
+    cursor: pointer;
+    text-transform: none;
+   }    
+ .btn-logout:hover {
+     color: #fff;
+ }
 .btn:hover {
 background-color: rgba(102, 46, 82);
 }

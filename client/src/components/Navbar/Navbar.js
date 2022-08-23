@@ -4,14 +4,16 @@ import logo from "../logo_1.png";
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Navbar.css";
+import Auth from '../../utils/auth';
 
-class Navbar extends Component {
-  state = { clicked: false };
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked });
+ const Navbar = () => {
+  const logout = event => {
+    event.preventDefault();
+    Auth.logout();
+  
   };
 
-  render() {
+ 
     return (
       <nav className="NavbarItems">
         <h1 className="navbar-logo">
@@ -20,32 +22,41 @@ class Navbar extends Component {
             <img className="logo" src={logo} alt="logo..." />
           </a>
         </h1>
-        <div className="menu-icon" onClick={this.handleClick}>
+        {/* <div className="menu-icon" onClick={this.handleClick}>
           <i
             className={
               this.state.clicked ? "fa-solid fa-bars" : "fa-solid fa-xmark"
             }
           ></i>
-        </div>
+        </div> */}
        
-        <div className="btn">
-
-        <>
-          <Link to="/" className="nav-manu nav-menu-active">Home</Link>
-              <Link to="/movie" className="nav-manu nav-menu-active">Movie</Link>
-               <Link to="/tv" className="nav-manu nav-menu-active">TV</Link>
+        
+<div className="nav-menu">
+        
+         
+          
+          {Auth.loggedIn() ? (
+            <>
+              <Link to="/" className="nav-links">Home</Link>
+               <Link to="/movie" className="nav-links">Movie</Link>
+               <Link to="/tv" className="nav-links">TV</Link>
+              <a  className="btn-logout" href="/" onClick={logout}>
+                Logout
+              </a>
+            </>   ) : (
+         <>
+              <div className="btn">
               <Link to="/login" className="sign-up-button">Login |</Link>
               <Link to="/signup" className="login-button">| Signup</Link>
+              </div>
             </>
-        </div>
-        {/* <div className="btn"> 
-        <button className="sign-up-button" onClick={Signup}>Sign Up |</button>
+            )}
+</div>
         
-        <button className="login-button" onClick={success}>| LogIn</button>
-        </div> */}
+      
       </nav>
     );
   }
-}
+
 
 export default Navbar;

@@ -17,6 +17,7 @@ import AddFavourite from "./components/AddFavourites";
 import RemoveFavourites from './components/RemoveFavourites';
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
+import Movie from "./components/Movie/Movie"
 import Footer from "./components/Footer/Footer";
 import Sorting from './components/Sorting/Sorting';
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -132,6 +133,7 @@ const App = () => {
           
           <Route exact path='/signup' element={<Signup/>}/>
           <Route exact path='/login' element={<Login/>}/>
+          <Route exact path='/movie' element={<Movie/>}/>
   
         </Routes>
       </Fragment>
@@ -175,6 +177,9 @@ const App = () => {
             />
           </div>
         </div>
+        
+     
+
         <Footer />
       </div>
     </ApolloProvider >
