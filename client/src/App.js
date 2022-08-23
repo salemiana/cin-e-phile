@@ -49,7 +49,7 @@ const App = () => {
   const [favorites, setfavorites] = useState("");
   const [searchValue, setSearchValue] = useState("");
   const [featured, setFeatured] = useState([true]);
-  const [showList, setList] = useState(<featured></featured>)
+  const [showList, setList] = useState(<Featured></Featured>)
 
   useEffect(() => {
     console.log(featured);
