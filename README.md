@@ -40,6 +40,10 @@ github: {(https://github.com/salemiana/cineview)}<br />
 heroku: {(https://pure-forest-35565.herokuapp.com/)}
 
 
+
+************************************
+    ## More React App Info
+************************************
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
