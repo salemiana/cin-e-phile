@@ -28,7 +28,6 @@ export default function Header(props) {
       </div>
       <div className="search-container">
          <form className = "searchBar" onSubmit ={handleSubmit}>
-            {/* <input className='i-search' type="text" value={props.value} onChange={(event)=> props.setSearchValue(event.target.value)} */}
             <input 
                className='i-search' 
                type="text"
