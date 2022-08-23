@@ -30,8 +30,8 @@
     width: 100%;
 }
 
-.searchBar{
-    width:65%;
+.searchBar{ 
+    width:40%;
     display:flex;
     background-color: white;
     border-radius: 100px;

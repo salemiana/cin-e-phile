@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {
   ApolloClient,
   InMemoryCache,
@@ -10,14 +11,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
+import Movie from "./components/Movie/Movie"
 import Footer from "./components/Footer/Footer";
 import AddFavorite from "./components/AddFavorite";
 import Featured from "./components/Featured/Featured";
 import SearchList from "./components/SearchList/SearchList";
- import RemoveFavorite from './components/RemoveFavorite';
+import RemoveFavorite from './components/RemoveFavorite';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 
+import Signup from "./components/Signup";
+import Login from "./components/Login";
 
 /**************APOLLO Section ******************** */
 const httpLink = createHttpLink({
@@ -47,18 +51,19 @@ const App = () => {
   const [searchValue, setSearchValue] = useState("");
   const [featured, setFeatured] = useState([true]);
   const [showList, setList] = useState(<featured></featured>)
+  const [user, setLoginUser] = useState({});
 
   useEffect(() => {
     console.log(featured);
-    if(featured){
+    if (featured) {
       console.log("in featured");
       setList(<Featured></Featured>);
     }
-    else{
+    else {
       console.log("featured is false");
-      setList(<SearchList searchValue ={searchValue} setSearchValue = {setSearchValue}/>);
+      setList(<SearchList searchValue={searchValue} setSearchValue={setSearchValue} />);
     }
-  }, [featured,searchValue])
+  }, [featured, searchValue])
 
   // useEffect(() => {
   //   const moviefavorites = JSON.parse(
@@ -90,14 +95,23 @@ const App = () => {
   return (
     <ApolloProvider client={client}>
       <div className="App">
-        <div id="header-bg">
-          <Navbar featured ={featured} setFeatured ={setFeatured}/>
-          <Header searchValue={searchValue} setSearchValue={setSearchValue} featured = {featured} setFeatured = {setFeatured}/>
-        </div>
-        {/* movie content */}
-          {showList}
-        <Footer />
+        <Router>
+          <Fragment>
+            <Navbar featured={featured} setFeatured={setFeatured} />
+            <Routes>
+              {/* <Route exact path='/' element={<Home/>}/> */}
+
+              <Route exact path='/signup' element={<Signup />} />
+              <Route exact path='/login' element={<Login />} />
+              <Route exact path='/movie' element={<Movie />} />
+
+              <Header searchValue={searchValue} setSearchValue={setSearchValue} featured={featured} setFeatured={setFeatured} />
+              {showList}
+            </Routes>
+          </Fragment>
+        </Router>
       </div>
+      <Footer />
     </ApolloProvider >
   );
 };

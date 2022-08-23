@@ -35,7 +35,6 @@ const MovieList = (props) => {
     // const FavoriteComponent = props.favoritesComponent;
     const {movies} = props;
     const filter = movies.filter(movie => movie.poster_path!=null);
-    
     return (
         <>
             {filter.length ?
