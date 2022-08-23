@@ -1,9 +1,3 @@
-/* dont need, turned bg black */
-/* body{
-  background: #141414;
-  color: #ffffff;
-} */
-
 .movie-app{
   display:inline-flex;
   flex-direction:row;
@@ -13,16 +7,57 @@
   overflow-x:scroll;
 }
 
+#searchList{
+  margin: 0 auto;
+  width: 90%;
+}
+
+.searchMovie{
+  margin: 0 auto;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  min-width: 20%;
+  justify-content:space-between;
+}
+.searchMovie::after {
+  content: "";
+  flex: auto;
+  margin-left: 20px;
+}
+
+.searchMovie img{
+  width: 100%;
+}
+
 /* valerie added */
 .movie-card{
   display:flex;
   flex-direction:column;
-  width:100%;
+  /* width:100%; */
 }
+
 
 .movie-app img{
   height:90%;
 }
+
+.actor-card{
+  margin-top:10px;
+  flex: none;
+  height: 150px;
+  width: 150px;
+  overflow:hidden;
+  border-radius:50%;
+  margin-right: 30px;
+}
+
+.actor-card img{
+  object-fit:cover;
+  height: 100%;
+  width: 100%;
+}
+
 
 .addFav{
   flex:flex-wrap;
@@ -75,7 +110,7 @@ body {
 }
 
 #header-bg{
-  background: linear-gradient(90deg, rgba(106,11,10,.6), rgba(11,23,53,.6)),url(./components/popcornpic.jpeg);
+  background: linear-gradient(90deg, rgba(106,11,10,.6), rgba(11,23,53,.6)),url(./components/Header/popcornpic.jpeg);
   background-size:cover;
   background-position:center;
 }

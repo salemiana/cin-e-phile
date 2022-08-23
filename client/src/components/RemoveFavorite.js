@@ -1,9 +1,9 @@
 import React from 'react';
 
-const RemoveFavourites = () => {
+const Removefavorites = () => {
     return (
         <>
-            <span className="mr-2">Remove from Favourites</span>
+            <span className="mr-2">Remove from favorites</span>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -27,4 +27,4 @@ const RemoveFavourites = () => {
 };
 
 
-export default RemoveFavourites;
+export default Removefavorites;
