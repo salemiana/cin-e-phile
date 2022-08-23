@@ -1,6 +1,6 @@
 import React from "react";
 
-const AddFavourite = () => {
+const AddFavorite = () => {
     return (
         //maybe show this as a hover?
         <>
@@ -11,11 +11,11 @@ const AddFavourite = () => {
     );
 };
 
-export default AddFavourite;
+export default AddFavorite;
 
 // moved down since it was causing errors
 /* <>
-    <span className="mr-2">Add to Favourite</span>
+    <span className="mr-2">Add to Favorite</span>
     <svg
         width="16"
         height="16" 

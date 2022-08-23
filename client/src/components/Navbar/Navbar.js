@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-// import { MenuItems } from "./MenuItems";
-import logo from "../logo_1.png";
+import logo from "../Navbar/logo_1.png";
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Navbar.css";
 import Auth from '../../utils/auth';
 
