@@ -1,9 +1,8 @@
 .NavbarItems {
-    height: 80px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
 }
 .navbar-logo {
     color: #fff;
@@ -23,22 +22,21 @@
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    gap: 20px;
+    gap: 60px;
     list-style: none;
     text-align: center;
-    width: 70vw;
+    width: 80vw;
     justify-content: end;
-    margin-right: 2rem;
+    margin-left: 3rem;
+    text-transform: uppercase;
 }
 .nav-links {
     color: white;
-    text-decoration: none;
-    padding: 0.5rem 1 rem;
+    text-decoration: none;   
 }
 .nav-links:hover {
-    background-color: #a2413e;
-    border-radius: 4px;
-    transition: all 0.2s ease-out;
+    color: #fff;
+    border-bottom: 2px solid #fff; 
 }
 .fa-bars {
     color: #fff;
@@ -49,7 +47,50 @@
 .menu-icon {
     display: none;
 }
-
+.btn {
+    background: rgba(102, 46, 82);
+    color: #fff;
+        border: 0px;
+        padding: 4px;
+        border-radius: 100px;
+        cursor: pointer;
+        text-transform:none;
+}
+   .btn-logout {
+    background: rgba(102, 46, 82);
+    color: #fff;
+   
+    padding: 4px;
+    border-radius: 100px;
+    cursor: pointer;
+    text-transform: none;
+   }    
+ .btn-logout:hover {
+     color: #fff;
+ }
+.btn:hover {
+background-color: rgba(102, 46, 82);
+}
+.sign-up-button {
+   border: none;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+}
+.sign-up-button:hover {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+.login-button {
+    background: none;
+    border:none;
+    cursor: pointer;
+    color: #fff;
+}
+.login-button:hover {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
 @media screen and (max-width: 768px) {
     .NavbarItems{
         position: relative;
@@ -79,10 +120,7 @@
         display: table;
 
     }
-    .nav-links:hover {
-        background-color: #9a3938;
-        border-radius: 0;    
-    }
+  
     .navbar-logo {
         position: absolute;
         top: 0;
