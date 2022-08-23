@@ -36,7 +36,8 @@ MIT
 
 ## Questions
 Contact us<br />
-github: {(https://github.com/salemiana/cineview)}
+github: {(https://github.com/salemiana/cineview)}<br />
+heroku: {(https://pure-forest-35565.herokuapp.com/)}
 
 
 # Getting Started with Create React App
