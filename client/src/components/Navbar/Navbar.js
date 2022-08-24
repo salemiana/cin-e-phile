@@ -19,15 +19,7 @@ import Auth from '../../utils/auth';
           <a className="navbar-brand" href="#">
             <img className="logo" src={logo} alt="logo..." />
           </a>
-        </h1>
-        {/* <div className="menu-icon" onClick={this.handleClick}>
-          <i
-            className={
-              this.state.clicked ? "fa-solid fa-bars" : "fa-solid fa-xmark"
-            }
-          ></i>
-        </div> */}
-       
+        </h1>      
         
 <div className="nav-menu">
         

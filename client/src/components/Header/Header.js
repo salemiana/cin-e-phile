@@ -4,17 +4,6 @@ import './Header.css'
 
 
 export default function Header(props) {
-  // const [value, setValue] = useState("");
-
-  // const onChange = (event) => {
-  //   setValue(event.target.value);
-  // };
-
-  // const onSearch = (searchTerm) => {
-  //   setValue(searchTerm);
-  //   // our api to fetch the search result
-  //   console.log("search ", searchTerm);
-  // };
  const [keyWord, setKeyword] = useState('');
 
   const handleSubmit = (event) => {

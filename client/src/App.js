@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
-import Movie from "./components/Movie/Movie"
+import Movie from "./components/pages/Movie"
 import Footer from "./components/Footer/Footer";
 import AddFavorite from "./components/AddFavorite";
 import Featured from "./components/Featured/Featured";
@@ -19,8 +19,10 @@ import SearchList from "./components/SearchList/SearchList";
 import RemoveFavorite from './components/RemoveFavorite';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import Signup from "./components/Signup";
-import Login from "./components/Login";
+import Signup from "./components/pages/Signup";
+import Login from "./components/pages/Login";
+import Home from "./components/pages/Home";
+import SearchResults from "./components/pages/SearchResults";
 
 
 /**************APOLLO Section ******************** */
@@ -47,23 +49,8 @@ const client = new ApolloClient({
 /**************************************************** */
 
 const App = () => {
-  const [favorites, setfavorites] = useState("");
-  const [searchValue, setSearchValue] = useState("");
-  const [featured, setFeatured] = useState([true]);
-  const [showList, setList] = useState(<Featured></Featured>)
-
-  useEffect(() => {
-    console.log(featured);
-    if (featured) {
-      console.log("in featured");
-      setList(<Featured></Featured>);
-    }
-    else {
-      console.log("featured is false");
-      setList(<SearchList searchValue={searchValue} setSearchValue={setSearchValue} />);
-    }
-  }, [featured, searchValue])
-
+    const [favorites, setfavorites] = useState("");
+    const [searchValue, setSearchValue] = useState("");
   // useEffect(() => {
   //   const moviefavorites = JSON.parse(
   //     localStorage.getItem('movie-app2-favorites')
@@ -72,24 +59,24 @@ const App = () => {
   //   setfavorites(moviefavorites);
   // }, []);
 
-  const saveToLocalStorage = (items) => {
-    localStorage.setItem("movie-app2-favorites", JSON.stringify(items));
-  };
+  // const saveToLocalStorage = (items) => {
+  //   localStorage.setItem("movie-app2-favorites", JSON.stringify(items));
+  // };
 
-  const addFavoriteMovie = (Movie) => {
-    const newFavoriteList = [...AddFavorite, Movie];
-    setfavorites(newFavoriteList);
-    saveToLocalStorage(newFavoriteList);
-  };
+  // const addFavoriteMovie = (Movie) => {
+  //   const newFavoriteList = [...AddFavorite, Movie];
+  //   setfavorites(newFavoriteList);
+  //   saveToLocalStorage(newFavoriteList);
+  // };
 
-  const removeFavorites = (movie) => {
-    const newFavoriteList = AddFavorite.filter(
-      (Favorite) => Favorite.imdbID !== movie.imdbID
-    );
+  // const removeFavorites = (movie) => {
+  //   const newFavoriteList = AddFavorite.filter(
+  //     (Favorite) => Favorite.imdbID !== movie.imdbID
+  //   );
 
-    setfavorites(newFavoriteList);
-    saveToLocalStorage(newFavoriteList);
-  };
+  //   setfavorites(newFavoriteList);
+  //   saveToLocalStorage(newFavoriteList);
+  // };
 
   return (
     <ApolloProvider client={client}>
@@ -97,22 +84,22 @@ const App = () => {
         <Router>
           <Fragment>
             <div id="header-bg">
-              <Navbar featured={featured} setFeatured={setFeatured} />
-              <Header searchValue={searchValue} setSearchValue={setSearchValue} featured={featured} setFeatured={setFeatured} />
+              <Navbar/>
+              <Header searchValue={searchValue} setSearchValue={setSearchValue}/>
             </div>
             <Routes>
-              {/* <Route exact path='/' element={<Home/>}/> */}
+              <Route exact path='/' element={<Home/>}/>
               <Route exact path='/signup' element={<Signup />} />
               <Route exact path='/login' element={<Login />} />
               <Route exact path='/movie' element={<Movie />} />
+              <Route exact path ='/search' element = {<SearchResults/>}/>
             </Routes>
           </Fragment>
         </Router>
         <div>
-          {showList}
         </div>
       </div>
-      <Footer />
+      <Footer/>
     </ApolloProvider >
   );
 };
