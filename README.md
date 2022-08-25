@@ -37,4 +37,4 @@ MIT
 ## Questions
 Contact us<br />
 github: {(https://github.com/salemiana/cineview)}<br />
-heroku: {(https://pure-forest-35565.herokuapp.com/)}
+heroku: {(https://pure-forest-35565.herokuapp.com/)}![cineview](https://user-images.githubusercontent.com/101297588/186561970-0b778a00-d3df-4084-bd36-e4a7b2f78ec3.png)
