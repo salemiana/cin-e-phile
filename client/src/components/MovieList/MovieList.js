@@ -1,9 +1,22 @@
 import React from "react";
 import AddFavorite from "../AddFavorite";
 import {getDetails, getCredits} from '../../utils/API';
+// import { SAVE_MOVIE} from '../../utils/mutations'
 // import FavoriteComponent from "./AddFavorite"
 
 const MovieList = (props) => {
+    const [saveMovie] = useMutation(SAVE_MOVIE);
+
+    const addToFav = async() =>{
+        try{
+            await saveMovie({
+                variables: { id: user._id},
+            });
+        }catch(e){
+            console.error(e);
+        }
+
+    }
 
     const handleClick = (e) =>{
         //do a fetch to get movie details of movie clicked
@@ -42,7 +55,7 @@ const MovieList = (props) => {
                     <div key= {movie.id} className="movie-card">
                          <img id={movie.id} onClick ={handleClick} src={`https://image.tmdb.org/t/p/w185/${movie.poster_path}`} alt='movie'></img>
                          <div className="addFav">
-                            <AddFavorite/>
+                            <p onClick = {addToFav} >&hearts;</p>
                         </div>
                     </div>
                 )) : 

@@ -45,7 +45,7 @@ const resolvers = {
 
       return { token, user };
     },
-    saveMovie: async (parent, { input }, { user }) => {
+    saveMovie: async (parent, { imdbID }, { user }) => {
       if (user) {
         const updatedUser = await User.findByIdAndUpdate(
           { _id: user._id },
